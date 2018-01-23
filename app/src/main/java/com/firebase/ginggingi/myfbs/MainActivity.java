@@ -63,6 +63,7 @@ public class MainActivity extends LoginBase
         //구글이했던 클릭리스너 지정방식 (이방식 처음암 ㄹㅇ 신기)
         findViewById(R.id.Login).setOnClickListener(this);
         findViewById(R.id.register).setOnClickListener(this);
+        findViewById(R.id.findIDPW).setOnClickListener(this);
     }
 
     private void SignIn(final String email, final String pw, final boolean AutoLog){
@@ -141,6 +142,9 @@ public class MainActivity extends LoginBase
                 Intent intent = new Intent(this, Register.class);
                 startActivity(intent);
                 finish();
+                break;
+            case R.id.findIDPW :
+                Toast.makeText(this, "추후 추가될 예정입니다.", Toast.LENGTH_SHORT).show();
                 break;
         }
     }
