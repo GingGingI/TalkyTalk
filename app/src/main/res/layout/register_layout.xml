@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/background"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/register1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="40dp"
+                android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/email"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:background="@drawable/email_pw_btn"
+                        android:textAlignment="center"
+                        android:padding="7dp"
+                        android:textSize="25sp" />
+                    <EditText
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/pw"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:background="@drawable/email_pw_btn"
+                        android:textAlignment="center"
+                        android:padding="7dp"
+                        android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/Next"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Next"
+                    android:textSize="15sp"
+                    style="@style/longBtn"/>
+                    </LinearLayout>
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/register2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="40dp"
+                android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="프로필 사진\n[눌러서 변경]"
+                        android:textAlignment="center"/>
+                
+                    <ImageButton
+                        android:id="@+id/ProfileImage"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:background="#00000000"
+                        android:src="@drawable/ic_person_24dp"/>
+                    <EditText
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="name"
+                        android:inputType="text"
+                        android:background="@drawable/email_pw_btn"
+                        android:textAlignment="center"
+                        android:padding="7dp"
+                        android:textSize="25sp" />
+
+                    <Button
+                        android:id="@+id/register"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Register"
+                        android:textSize="15sp"
+                        style="@style/longBtn"/>
+            </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "834277938890",
+    "firebase_url": "https://fir-study-7ef68.firebaseio.com",
+    "project_id": "fir-study-7ef68",
+    "storage_bucket": "fir-study-7ef68.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:834277938890:android:f9d870dd8d8eb265",
+        "android_client_info": {
+          "package_name": "com.firebase.ginggingi.myfbs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "834277938890-i0spg7uml4q9h840ie3gc58gcls3rgvf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeO5p7fV41ZzGvGePEduOC_sdheN9TYiE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
