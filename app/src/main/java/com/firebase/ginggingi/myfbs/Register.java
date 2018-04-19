@@ -19,7 +19,6 @@ import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -127,12 +126,12 @@ public class Register extends LoginBase implements View.OnClickListener{
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()){
                             //정규식을 뚫고 성공했을시
-                            Log.d(TAG, "createUserWithEmail:success");
+//                            Log.d(TAG, "createUserWithEmail:success");
                             getname = name;
                             Registered();
                         } else {
                             //실패 ㅠㅠ
-                            Log.e(TAG, "sendEmailVerification", task.getException());
+//                            Log.e(TAG, "sendEmailVerification", task.getException());
                             Toast.makeText(Register.this, "Failed to send verification email", Toast.LENGTH_SHORT).show();
                         }
                         hideProgressDialog();
@@ -269,7 +268,7 @@ public class Register extends LoginBase implements View.OnClickListener{
         switch (requestCode){
             case GET_PICTURE:
                 mImageUri = data.getData();
-                Log.d(TAG, mImageUri.getPath().toString());
+//                Log.d(TAG, mImageUri.getPath().toString());
                 ImgCrop();
                 break;
             case CROP_FROM_IMAGE:

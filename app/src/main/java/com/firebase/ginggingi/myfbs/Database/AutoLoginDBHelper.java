@@ -4,7 +4,6 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.util.Log;
 
 import com.firebase.ginggingi.myfbs.model.UserIdPw;
 
@@ -31,12 +30,12 @@ public class AutoLoginDBHelper extends SQLiteOpenHelper {
         sb.append("PW TEXT)");
 
         db.execSQL(sb.toString());
-        Log.i(TAG, "Database Created");
+//        Log.i(TAG, "Database Created");
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        Log.i(TAG,"Version up from: "+oldVersion+", to : "+newVersion);
+//        Log.i(TAG,"Version up from: "+oldVersion+", to : "+newVersion);
     }
 
 //    idpw 추가
@@ -59,8 +58,8 @@ public class AutoLoginDBHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = getWritableDatabase();
 
         db.delete("IDPW_TABLE",null,null);
-
     }
+
 //    idpw 가져오기
     public UserIdPw GetId(){
         StringBuffer sb = new StringBuffer();
@@ -71,7 +70,7 @@ public class AutoLoginDBHelper extends SQLiteOpenHelper {
 
         Cursor cursor = db.rawQuery(sb.toString(), null);
         UserIdPw IDPW = null;
-        Log.i(TAG,"Data row founds : "+cursor.getCount());
+//        Log.i(TAG,"Data row founds : "+cursor.getCount());
         while (cursor.moveToNext()){
             IDPW = new UserIdPw();
 

@@ -134,8 +134,8 @@ public class MainActivity extends LoginBase
                 hidekey();
                 break;
             case R.id.Login :
-                    String email = mIdField.getText().toString();
-                    String pw = mPwField.getText().toString();
+                String email = mIdField.getText().toString();
+                String pw = mPwField.getText().toString();
                 if (ChkEmail(email) && ChkPw(pw)) {SignIn(email, pw, false);}
                 break;
             case R.id.register :
